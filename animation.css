@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  margin: 50px auto; 
+  text-align: center;
+  perspective: 800px;
+}
+
+.cube > div {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+@keyframes fadein {
+  0%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.animate {
+  animation: spin .5s ease-in-out forwards;
+}
+
+.fadein {
+  animation: fadein .5s ease-in-out forwards;
+}
+
+button {
+  height: 30px;
+    width: 200px;
+    background-color: #68CCCC;
+    border: 0;
+    border-radius: 5px;
+}
